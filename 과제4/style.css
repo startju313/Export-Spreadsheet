@@ -1,0 +1,41 @@
+#export-btn {
+    background: #04AB46;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.cell-row {
+    display: flex;
+}
+
+.cell {
+    width: 80px;
+    border: 1px solid lightgray;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 5px; /* 패딩 추가 */
+}
+
+.cell.header {
+    text-align: center;
+    background: #ddd;
+    font-weight: bold; /* 폰트 굵게 */
+}
+
+.cell.header.active {
+    background: lightblue;
+    color: white;
+    transition: background 0.2s ease; /* 전환 효과 추가 */
+}
+
+/* 선택된 셀 자체에 테두리 스타일 */
+.cell.selected {
+    border: 2px solid #007bff; /* 파란색 테두리 */
+    z-index: 1; /* 다른 셀 위로 올라오게 */
+}
